@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación</title>
+    <!-- Enlazar el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>¡Estás invitado a mi fiesta! 🎉</h1>
+        </header>
+        <main class="content">
+            <p id="invitados-texto" class="invitados-texto"></p>
+        </main>
+        <footer class="footer">
+            <p>¡No faltes! 🎈</p>
+        </footer>
+    </div>
+
+    <!-- Script para manejar invitados dinámicos -->
+    <script>
+        // Leer el número de invitados del parámetro en la URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const invitados = urlParams.get("invitados") || "X";
+        document.getElementById("invitados-texto").innerText = 
+            `Puedes traer a ${invitados} invitados contigo.`;
+    </script>
+</body>
+</html>
