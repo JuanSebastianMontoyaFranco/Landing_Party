@@ -4,33 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitación</title>
-    <!-- Enlazar el archivo CSS -->
+    <title>Invitación 15 Años</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="./assets/favico.png">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>¡Estás invitado a mi fiesta! 🎉</h1>
-        </header>
-        <main class="content">
-            <p id="invitados-texto" class="invitados-texto"></p>
-        </main>
-        <footer class="footer">
-            <p>¡No faltes! 🎈</p>
-        </footer>
-    </div>
+    <header class="hero">
+        <h1>Luisa Oriana Osorio Vanegas</h1>
+        <p>Mis 15 años</p>
+    </header>
 
-    <!-- Script para manejar invitados dinámicos -->
-    <script>
-        // Leer el número de invitados del parámetro en la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const invitados = urlParams.get("invitados") || "X";
-        document.getElementById("invitados-texto").innerText =
-            `Puedes traer a ${invitados} invitados contigo.`;
-    </script>
+    <main>
+        <section class="introduction">
+            <img class="separator" src="separator-top.png" alt="Separador superior">
+            <p>
+                Quiero dar gracias a Dios por permitirme cumplir este sueño tan especial:
+                llegar a mis 15 años rodeada de amor y bendiciones.
+                Agradezco profundamente a mi familia, amigos y a todos los que han estado a mi lado,
+                quienes con su apoyo, cariño y presencia han hecho de este día algo inolvidable.
+                Este momento marca el inicio de una nueva etapa en mi vida, llena de retos,
+                aprendizajes y oportunidades para crecer como persona.
+            </p>
+            <img class="separator" src="separator-bottom.png" alt="Separador inferior">
+        </section>
+
+        <div class="separator-main"></div>
+        <div class="separator-main"></div>
+
+        
+        <section class="featured-section">
+            <!-- Imagen de fondo con título y subtítulo -->
+            <div class="background-container">
+                <h1>Este es el título</h1>
+                <h3 class="subtitle">Este es el subtítulo en cursiva</h3>
+                <img class="separator" src="separator.png" alt="Separador">
+            </div>
+
+            <!-- Dos columnas -->
+            <div class="columns-container">
+                <div class="column">
+                    <img src="image1.jpg" alt="Imagen 1">
+                    <h2>Título de la columna 1</h2>
+                    <h4 class="subtitle">Subtítulo de la columna 1</h4>
+                    <p>
+                        Este es un texto descriptivo para la columna 1. Aquí puedes agregar más información
+                        acerca del contenido que deseas destacar.
+                    </p>
+                    <button class="">Leer más</button>
+                </div>
+
+                <div class="column">
+                    <img src="image2.jpg" alt="Imagen 2">
+                    <h2>Título de la columna 2</h2>
+                    <h4 class="subtitle">Subtítulo de la columna 2</h4>
+                    <p>
+                        Este es un texto descriptivo para la columna 2. Aquí puedes agregar más información
+                        acerca del contenido que deseas destacar.
+                    </p>
+                    <button class="confirmation button">Leer más</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="custom-section">
+            <!-- Imagen de fondo -->
+            <div class="background-container">
+                <h1>
+                    <img src="icon-left.png" alt="Icono izquierdo" class="small-icon">
+                    Este es el título principal
+                    <img src="icon-right.png" alt="Icono derecho" class="small-icon">
+                </h1>
+                <img src="main-image.jpg" alt="Imagen principal" class="main-image">
+            </div>
+
+            <!-- Título con borde dorado -->
+            <div class="golden-title">
+                <h2>Título en rectángulo dorado</h2>
+            </div>
+
+            <!-- Subtítulo -->
+            <h3 class="subtitle">Este es el subtítulo</h3>
+
+            <!-- Cuadrado con imagen y título -->
+            <div class="rounded-square">
+                <img src="square-image.jpg" alt="Imagen cuadrada" class="square-image">
+                <h4>
+                    <img src="icon-left.png" alt="Icono izquierdo" class="small-icon">
+                    Título con íconos
+                    <img src="icon-right.png" alt="Icono derecho" class="small-icon">
+                </h4>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>

@@ -1,63 +1,274 @@
-/* Estilos generales */
 body {
+    font-family: 'Georgia', serif;
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    padding: 0;
     color: #333;
+    background-color: #fdf7f7;
+    box-sizing: border-box;
+  }
+  
+  header.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  header.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #6a1b9a;
+  }
+  
+  header.hero p {
+    font-size: 1.5rem;
+    color: #9c27b0;
+    margin-top: 0.5rem;
+  }
+  
+  main {
+    padding: 2rem 1rem;
+  }
+  
+  section {
+    margin-bottom: 0;
+    padding: 1.5rem;
+  }
+  
+  .introduction {
+    background-image: url('background-image.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+    background-position: center; /* Centra la imagen de fondo */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    line-height: 1.8; /* Espaciado entre líneas */
+  }
+
+  .separator {
+    display: block;
+    margin: 20px auto; /* Centra la imagen y agrega espacio superior e inferior */
+    max-width: 80%; /* Limita el ancho de la imagen a un porcentaje del contenedor */
+    height: auto; /* Mantén las proporciones de la imagen */
+  }
+  
+  
+  .confirmation .button {
+    display: inline-block;
+    background: #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .confirmation .button:hover {
+    background: #6a1b9a;
+  }
+
+  .large-image {
+    display: flex; /* Centra el contenido si es necesario */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: #000; /* Color de fondo en caso de que la imagen no cargue */
+    overflow: hidden; /* Asegura que no haya barras de desplazamiento */
+  }
+  
+  .large-image img {
+    max-width: 100%; /* La imagen ocupa el ancho completo */
+    max-height: 100%; /* La imagen ocupa el alto completo */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+  }
+  
+  footer {
+    text-align: center;
+    background: #6a1b9a;
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    header.hero h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+
+  /* Imagen de fondo y contenido centrado */
+.featured-section .background-container {
+    background-image: url('background-image.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .featured-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .featured-section .subtitle {
+    font-style: italic; /* Texto en cursiva */
+    font-size: 1.2em;
+  }
+  
+  .featured-section .separator {
+    display: block;
+    margin: 20px auto;
+    max-width: 60%;
+    height: auto;
+  }
+  
+  /* Contenedor de columnas */
+  .columns-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre columnas */
+    padding: 20px;
+  }
+  
+  /* Estilo para cada columna */
+  .column {
+    flex: 1 1 calc(50% - 40px); /* Cada columna ocupa el 50% menos el espacio del gap */
+    max-width: 500px; /* Ancho máximo para columnas */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .column img {
+    max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+    margin-bottom: 15px; /* Espaciado inferior */
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  .column h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .column .subtitle {
+    font-style: italic;
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .column p {
+    font-size: 0.9em;
+    color: #555; /* Texto gris oscuro */
+    margin-bottom: 20px;
+  }
+  
+  .column button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color del botón */
+    border: none;
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .column button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón */
+  }
+  
+
+  /* Contenedor con imagen de fondo */
+.custom-section .background-container {
+    background-image: url('background-image.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .custom-section h1 {
+    font-size: 2.5em;
+    color: #000; /* Títulos en negro */
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-}
-
-/* Contenedor principal */
-.container {
-    max-width: 600px;
-    background: #fff;
+    gap: 10px; /* Espacio entre el título y las imágenes pequeñas */
+  }
+  
+  .custom-section .small-icon {
+    width: 30px; /* Tamaño de las imágenes pequeñas */
+    height: auto;
+  }
+  
+  .custom-section .main-image {
+    max-width: 100%;
+    margin: 20px auto;
+    display: block;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    padding: 20px;
+  }
+  
+  /* Título con borde dorado */
+  .golden-title {
     text-align: center;
-}
-
-/* Header */
-.header h1 {
-    font-size: 32px;
-    margin: 0 0 20px;
-    color: #ff6f61;
-}
-
-/* Texto dinámico */
-.invitados-texto {
-    font-size: 18px;
     margin: 20px 0;
+  }
+  
+  .golden-title h2 {
+    font-size: 1.8em;
+    color: #000; /* Color negro para el texto */
+    padding: 10px 20px;
+    display: inline-block;
+    border: 3px solid #DAA520; /* Borde dorado */
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: transparent; /* Fondo transparente */
+  }
+  
+  /* Subtítulo */
+  .custom-section .subtitle {
+    font-size: 1.5em;
     color: #555;
-}
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+  }
+  
+  /* Cuadrado con bordes redondeados */
+  .custom-section .rounded-square {
+    background-color: #f8f8f8; /* Fondo claro */
+    border-radius: 20px 20px 0 0; /* Bordes redondeados en la parte superior */
+    max-width: 300px; /* Ancho máximo del cuadrado */
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-section .square-image {
+    max-width: 100%; /* Imagen dentro del cuadrado */
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .custom-section .rounded-square h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    color: #000; /* Títulos en negro */
+    margin-top: 10px;
+  }
+  
+  .custom-section .rounded-square .small-icon {
+    width: 20px; /* Tamaño de los íconos pequeños en el título */
+    height: auto;
+  }
+  
 
-/* Footer */
-.footer {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
-}
-
-/* Responsividad para tablets */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 28px;
-    }
-    .invitados-texto {
-        font-size: 16px;
-    }
-}
-
-/* Responsividad para móviles */
-@media (max-width: 480px) {
-    .header h1 {
-        font-size: 24px;
-    }
-    .invitados-texto {
-        font-size: 14px;
-    }
-}
+  .separator-main {
+    width: 100%;
+    height: 2px; /* Puedes ajustar el grosor */
+    background: linear-gradient(to right, #9c27b0, #6a1b9a); /* Gradiente de morado claro a oscuro */
+    margin: 2rem 0; /* Espaciado superior e inferior para separar las secciones */
+  }
+  
