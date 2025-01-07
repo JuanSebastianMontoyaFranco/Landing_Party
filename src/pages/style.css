@@ -25,8 +25,6 @@
     }
 }
 
-
-// Counter
 .countdown-section {
   text-align: center;
   background-color: #d8b4f3;
@@ -85,7 +83,7 @@
   gap: 20px; /* Espaciado adicional entre los elementos */
   padding: 10px;
   border-radius: 10px;
-  background: linear-gradient(to center, #ffffff, #4a148c);
+  background: radial-gradient(circle, #ffffff, #e6ccef);
   flex-wrap: nowrap; /* No permite que los elementos se apilen */
 }
 
