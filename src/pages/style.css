@@ -10,6 +10,14 @@
     object-fit: cover;
 }
 
+.letter {
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 
 @media (max-width: 768px) {
     .banner-text {
@@ -79,4 +87,42 @@
   font-weight: bold;
   color: #550a8b;
   text-align: center;
+}
+
+
+.guests-number {
+  position: absolute;
+  top: 35%; /* Ajusta la posición inicial */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .guests-number {
+      top: 29%; /* Ajusta para pantallas más pequeñas */
+      font-size: 2.5rem; /* Reduce el tamaño del texto */
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas (ejemplo: teléfonos pequeños) */
+@media (max-width: 480px) {
+  .guests-number {
+      top: 60%; /* Ajusta aún más si es necesario */
+      font-size: 1.2rem; /* Más pequeño para adaptarse mejor */
+  }
+}
+
+/* Ajustes para pantallas grandes (escritorio) */
+@media (min-width: 992px) {
+  .guests-number {
+      top: 35%; /* Ajusta la posición específica para escritorio */
+      font-size: 2.5rem; /* Aumenta el tamaño si es necesario */
+  }
 }
