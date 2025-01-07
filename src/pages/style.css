@@ -10,6 +10,23 @@
     object-fit: cover;
 }
 
+/* Agrega esto a tu archivo CSS */
+@keyframes slideInFromTop {
+  from {
+      opacity: 0; /* Comienza invisible */
+      transform: translateY(-100%); /* Comienza fuera de la vista, en la parte superior */
+  }
+  to {
+      opacity: 1; /* Al final, es completamente visible */
+      transform: translateY(0); /* Vuelve a su posición original */
+  }
+}
+
+.banner {
+  animation: slideInFromTop 3s ease-out; /* Duración y suavizado */
+}
+
+
 .letter {
   font-family: 'Ibarra Real Nova', serif;
 }
