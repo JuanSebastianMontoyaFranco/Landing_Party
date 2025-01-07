@@ -113,8 +113,8 @@
 
 @media (min-width: 361px) and (max-width: 414px) {
   .guests-number {
-      top: 30%;
-      font-size: 1.5rem;
+      top: 25%;
+      font-size: 2rem;
   }
 }
 
