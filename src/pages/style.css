@@ -106,7 +106,7 @@
 /* Ajustes para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
   .guests-number {
-      top: 29%; /* Ajusta para pantallas más pequeñas */
+      top: 20%; /* Ajusta para pantallas más pequeñas */
       font-size: 2.5rem; /* Reduce el tamaño del texto */
   }
 }
@@ -114,8 +114,15 @@
 /* Ajustes para pantallas muy pequeñas (ejemplo: teléfonos pequeños) */
 @media (max-width: 480px) {
   .guests-number {
-      top: 18%; /* Ajusta aún más si es necesario */
+      top: 25%; /* Ajusta aún más si es necesario */
       font-size: 1.8rem; /* Más pequeño para adaptarse mejor */
+  }
+}
+
+@media (max-width: 400px) {
+  .guests-number {
+      top: 20%; /* Ajusta la posición para pantallas muy pequeñas */
+      font-size: 1rem; /* Reduce el tamaño del texto */
   }
 }
 
