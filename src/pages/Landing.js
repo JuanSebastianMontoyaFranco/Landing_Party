@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPager } from "@fortawesome/free-solid-svg-icons";
-import { Col, Row, Card, Image, Button, Container, ListGroup, Tooltip, OverlayTrigger, Form, Navbar, Badge } from '@themesberg/react-bootstrap';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import { Col, Row, Container } from '@themesberg/react-bootstrap';
 
 //Section 1
 import front from '../assets/img/section1/portada.jpg';
@@ -26,7 +22,6 @@ import backgroundSection4 from '../assets/img/section4/background.jpg';
 //Section 5
 import persons from '../assets/img/section5/person.png';
 import card from '../assets/img/section5/card.png';
-import formal from '../assets/img/section5/icon.png';
 import icon1 from '../assets/img/section5/icon1.png';
 import icon2 from '../assets/img/section5/icon2.png';
 import icon3 from '../assets/img/section5/icon3.png';
@@ -40,7 +35,7 @@ import timeLine from '../assets/img/section6/time-line.png';
 import logoFooter from '../assets/img/footer/icon.png';
 import './style.css'
 
-export default () => {
+const Landing = () => {
     const urlParams = new URLSearchParams(window.location.search);
     const guestsNumber = urlParams.get('invitados') || '0'; // Si no hay número de invitados, poner 0 por defecto
     const eventDate = new Date("2025-02-22T00:00:00");
@@ -361,3 +356,5 @@ export default () => {
         </>
     );
 };
+
+export default Landing;

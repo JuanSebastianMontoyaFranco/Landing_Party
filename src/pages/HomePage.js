@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 // Pages
 import Landing from "../pages/Landing"
 import Preloader from '../components/widgets/Preloader';
-import LandingNavbar from "../components/widgets/LandingNavbar"
-import LandingSidebar from "../components/widgets/LandingSidebar"
 
 import { Routes as RoutesConfig } from '../routes';
 
