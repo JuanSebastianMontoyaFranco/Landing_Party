@@ -14,7 +14,7 @@
 @keyframes slideInFromTop {
   from {
       opacity: 0; /* Comienza invisible */
-      transform: translateY(-100%); /* Comienza fuera de la vista, en la parte superior */
+      transform: translateY(-800%); /* Comienza fuera de la vista, en la parte superior */
   }
   to {
       opacity: 1; /* Al final, es completamente visible */
