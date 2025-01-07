@@ -27,7 +27,6 @@
 
 .countdown-section {
   text-align: center;
-  background-color: #d8b4f3;
   padding: 20px;
   border-radius: 15px;
   max-width: 600px;
@@ -43,7 +42,7 @@
   background-color: #a570c2; /* Morado más claro para el contenedor */
   padding: 10px; /* Menos espacio alrededor de los bloques */
   border-radius: 12px; /* Bordes redondeados */
-  margin: 10px 50px 10px 50px; /* Solo un pequeño margen superior e inferior */
+  margin: 10px 10px 10px 10px; /* Solo un pequeño margen superior e inferior */
 }
 
 .timer-container {
@@ -64,24 +63,12 @@
   text-align: center;
 }
 
-.gradient-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3px;
-  border-radius: 10px;
-  background: radial-gradient(circle,#ffffff, #e6ccef);
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 .labels-container {
   display: flex; /* Asegúrate de usar flexbox */
   justify-content: space-between; /* Espacia los elementos uniformemente */
   align-items: center; /* Alinea verticalmente al centro */
   gap: 20px; /* Espaciado adicional entre los elementos */
-  padding: 10px;
+  padding: 10px 40px;
   border-radius: 10px;
   background: radial-gradient(circle, #ffffff, #e6ccef);
   flex-wrap: nowrap; /* No permite que los elementos se apilen */

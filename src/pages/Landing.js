@@ -82,17 +82,17 @@ const Landing = () => {
             >
                 <img src={separator2} alt="Separador superior" />
 
-                <p className="primary">
+                <p className="text-dark">
                     Quiero dar gracias a Dios por permitirme cumplir este sueño tan especial: llegar a mis 15
                     años rodeada de amor y bendiciones. Este momento único en mi vida no estaría completo
                     sin compartirlo con mi familia y las personas que más quiero.
                 </p>
-                <p>
+                <p className="text-dark">
                     Por eso, con mucha emoción, quiero invitarlos a mi fiesta de 15 años para celebrar juntos
                     este día tan especial. Será una noche inolvidable llena de alegría y diversión, y me encantaría
                     contar con su presencia para hacerla aún más mágica.
                 </p>
-                <p>
+                <p className="text-dark">
                     ¡Los espero!
 
                 </p>
@@ -135,7 +135,7 @@ const Landing = () => {
                             />
                             <div className="guests-number" style={{
                                 position: 'absolute',
-                                top: '8%',
+                                top: '9%',
                                 left: '50%',
                                 transform: 'translate(-50%, -50%)', // Centra el número
                                 fontSize: '2rem',
@@ -164,9 +164,9 @@ const Landing = () => {
                                 className="img-fluid mb-4"
                             />
                             <div className=" flex-grow-1 d-flex flex-column align-items-center">
-                                <p className="text-gray">Eventos Ipus</p>
-                                <p>Pance</p>
-                                <p>Cll 16b#127-90</p>
+                                <p className="text-secondary">Eventos Ipus</p>
+                                <p className="text-secondary">Pance</p>
+                                <p className="text-secondary">Cll 16b#127-90</p>
                                 <div className="mt-auto">
                                     <button className="btn btn-primary">Ver mapa</button>
                                 </div>
@@ -186,7 +186,7 @@ const Landing = () => {
                                 className="img-fluid mb-4"
                             />
                             <div className=" flex-grow-1 d-flex flex-column align-items-center">
-                                <p className="text-gray">
+                                <p style={{paddingTop: '20px'}} className="text-secondary">
                                     Es importante para
                                     mi saber si contaré
                                     con tu presencia
@@ -325,7 +325,7 @@ const Landing = () => {
                     </div>
                 </div>
 
-                <div className="gradient-container">
+                <div className="">
                     <div className="labels-container">
                         <span className="time-label">Días</span>
                         <span className="time-label">Horas</span>
