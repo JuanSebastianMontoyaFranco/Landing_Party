@@ -114,8 +114,8 @@
 /* Ajustes para pantallas muy pequeñas (ejemplo: teléfonos pequeños) */
 @media (max-width: 480px) {
   .guests-number {
-      top: 60%; /* Ajusta aún más si es necesario */
-      font-size: 1.2rem; /* Más pequeño para adaptarse mejor */
+      top: 18%; /* Ajusta aún más si es necesario */
+      font-size: 1.8rem; /* Más pequeño para adaptarse mejor */
   }
 }
 
