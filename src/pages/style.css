@@ -1,0 +1,97 @@
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .banner-text {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        text-align: center;
+        padding: 20px;
+    }
+    .banner-text button {
+        margin-top: 10px;
+    }
+}
+
+
+// Counter
+.countdown-section {
+  text-align: center;
+  background-color: #d8b4f3;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; /* Centra el contenedor principal */
+}
+
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* Asegura que el contenedor se ajuste al tamaño de los bloques */
+  background-color: #a570c2; /* Morado más claro para el contenedor */
+  padding: 10px; /* Menos espacio alrededor de los bloques */
+  border-radius: 12px; /* Bordes redondeados */
+  margin: 10px 50px 10px 50px; /* Solo un pequeño margen superior e inferior */
+}
+
+.timer-container {
+  display: flex;
+  justify-content: space-between; /* Asegura que haya espacio entre los bloques */
+  align-items: center;
+  gap: 15px; /* Espacio entre los bloques */
+}
+
+.time-box {
+  background-color: #e6ccef;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80px;
+  color: #6a1b9a;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.gradient-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 10px;
+  background: radial-gradient(circle,#ffffff, #e6ccef);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.labels-container {
+  display: flex; /* Asegúrate de usar flexbox */
+  justify-content: space-between; /* Espacia los elementos uniformemente */
+  align-items: center; /* Alinea verticalmente al centro */
+  gap: 20px; /* Espaciado adicional entre los elementos */
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to center, #ffffff, #4a148c);
+  flex-wrap: nowrap; /* No permite que los elementos se apilen */
+}
+
+.time-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #550a8b;
+  text-align: center;
+}
