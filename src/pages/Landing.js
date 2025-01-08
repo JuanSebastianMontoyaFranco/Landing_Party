@@ -105,7 +105,7 @@ const Landing = () => {
                     ¡Los espero!
 
                 </p>
-                <img src={separator1} alt="Separador superior" />
+                <img style={{paddingBottom: '120px'}} src={separator1} alt="Separador superior" />
 
             </section>
 
