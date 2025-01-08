@@ -80,6 +80,13 @@ const Landing = () => {
                 <img src={front} alt="Banner image" className="img-fluid banner-image" />
             </section>
 
+            <section className="audio-widget text-center mb-2 mt-2">
+                <audio controls style={{ width: '80%' }}>
+                    <source src={song} type="audio/mp3" />
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </section>
+
             <section
                 className="text-center"
                 style={{
@@ -105,7 +112,7 @@ const Landing = () => {
                     ¡Los espero!
 
                 </p>
-                <img style={{paddingBottom: '120px'}} src={separator1} alt="Separador superior" />
+                <img style={{ paddingBottom: '120px' }} src={separator1} alt="Separador superior" />
 
             </section>
 
@@ -140,14 +147,6 @@ const Landing = () => {
                     <row>
                         <img src={separatorSection4} alt="Separador superior" />
                     </row>
-
-                    <section className="audio-widget text-center mb-2 mt-2">
-                        <audio controls style={{ width: '80%' }}>
-                            <source src={song} type="audio/mp3" />
-                            Tu navegador no soporta el elemento de audio.
-                        </audio>
-                    </section>
-
 
                     <Row className="justify-content-center">
                         <Col xs={12} className="text-center">
