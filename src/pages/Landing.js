@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Col, Row, Container } from '@themesberg/react-bootstrap';
 
+//song
+import song from '../assets/audio/audio.mp3';
 //Section 1
 import front from '../assets/img/section1/portada.jpg';
 
@@ -126,7 +128,7 @@ const Landing = () => {
                             style={{
                                 width: '100%', // Cambiar tamaño de la imagen
                                 maxWidth: '600px', // Tamaño máximo de la imagen
-                                margin: '0 auto 15px', // Centrar la imagen y añadir margen inferior
+                                margin: '0 auto', // Centrar la imagen y añadir margen inferior
                                 display: 'block',
                                 borderRadius: '10px',
                             }}
@@ -138,6 +140,15 @@ const Landing = () => {
                     <row>
                         <img src={separatorSection4} alt="Separador superior" />
                     </row>
+
+                    <section className="audio-widget text-center mb-2 mt-2">
+                        <audio controls style={{ width: '80%' }}>
+                            <source src={song} type="audio/mp3" />
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </section>
+
+
                     <Row className="justify-content-center">
                         <Col xs={12} className="text-center">
                             <div className="icon icon-shape icon-lg border-light">
@@ -212,7 +223,10 @@ const Landing = () => {
                                     con tu presencia
                                 </p>
                                 <div className="mt-auto">
-                                    <button style={{ fontFamily: "'Ibarra Real Nova', serif" }} className="btn btn-primary">Confirmar aquí</button>
+                                    <a href="https://forms.gle/TywkskaRuspAAhQN6">
+                                        <button style={{ fontFamily: "'Ibarra Real Nova', serif" }} className="btn btn-primary">Confirmar aquí</button>
+                                    </a>
+
                                 </div>
                             </div>
                         </Col>
@@ -234,14 +248,14 @@ const Landing = () => {
                 <div className="text-center">
                     <div className="d-flex align-items-center justify-content-center">
                         <img
-                            style={{ width: '30px', height: 'auto', marginRight: '10px' }}
+                            style={{ width: '50px', height: 'auto', marginRight: '10px' }}
                             src={icon3}
                             alt="Icon"
                             className="small-icon"
                         />
-                        <h2 className="mb-0 letter">DRESS CODE</h2>
+                        <h1 style={{ fontSize: '50px' }} className="mb-0 letter">DRESS CODE</h1>
                         <img
-                            style={{ width: '30px', height: 'auto', marginLeft: '10px' }}
+                            style={{ width: '50px', height: 'auto', marginLeft: '10px' }}
                             src={icon4}
                             alt="Icon"
                             className="small-icon"
@@ -304,7 +318,7 @@ const Landing = () => {
                     />
 
                     {/* Título e íconos a cada lado */}
-                    <div className="d-flex align-items-center justify-content-between">
+                    <div className="d-flex align-items-center justify-content-center" style={{ gap: '10px' }}>
                         <img
                             src={icon1}
                             alt="Icono 1"
@@ -312,10 +326,9 @@ const Landing = () => {
                                 width: '40px',
                                 height: '40px',
                                 borderRadius: '50%',
-                                marginRight: '10px',
                             }}
                         />
-                        <h5 className="text-white mb-0 letter" style={{ textAlign: 'center', flex: 1}}>
+                        <h5 className="text-white mb-0 letter" style={{ textAlign: 'center', margin: '0', fontSize: '30px' }}>
                             LLUVIA DE SOBRES
                         </h5>
                         <img
@@ -325,7 +338,6 @@ const Landing = () => {
                                 width: '40px',
                                 height: '40px',
                                 borderRadius: '50%',
-                                marginLeft: '10px',
                             }}
                         />
                     </div>
@@ -359,10 +371,10 @@ const Landing = () => {
 
                     <div className="timer-container">
                         <div>
-                            <div  className="time-box letter" id="days">{timeLeft.days < 10 ? `0${timeLeft.days}` : timeLeft.days}</div>
+                            <div className="time-box letter" id="days">{timeLeft.days < 10 ? `0${timeLeft.days}` : timeLeft.days}</div>
                         </div>
                         <div>
-                            <div  className="time-box letter" id="hours">{timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}</div>
+                            <div className="time-box letter" id="hours">{timeLeft.hours < 10 ? `0${timeLeft.hours}` : timeLeft.hours}</div>
                         </div>
                         <div>
                             <div className="time-box letter" id="minutes">{timeLeft.minutes < 10 ? `0${timeLeft.minutes}` : timeLeft.minutes}</div>
